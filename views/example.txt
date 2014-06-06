@@ -1,0 +1,32 @@
+Simple Programming Tutorial
+---------------------------
+
+if(condition)
+{
+	Code A
+}
+else
+{
+	Code B
+}
+
+If condition is equal to true Code A will be executed,
+if not Code B will be executed.
+
+---------------------------
+
+switch(variable)
+{
+case equalCheck1:
+	Code A
+	break;
+case equalCheck2:
+	Code B
+	break;
+case equalCheck3:
+	Code C
+	break;
+}
+
+If variable equals to equalCheck1 Code A will be executed,
+equalCheck2 = Code B, equalCheck3 = Code C

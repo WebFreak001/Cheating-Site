@@ -1,10 +1,12 @@
 {
-  "name": "naive",
-  "description": "A package using naive versioning",
-  "author": "A confused individual <iam@confused.com>",
+  "name": "cheat-website",
+  "description": "A Website for cheating at exams",
+  "author": "WebFreak001 <webfreak@derpymail.org>",
+  "private": true,
   "dependencies": {
     "express.io": "1.1.13",
     "ejs": "1.0.x",
-	"express-minify": "*"
+	"express-minify": "*",
+	"connect-busboy": "*"
   }
 }

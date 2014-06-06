@@ -1,4 +1,40 @@
 <% include head.ejs %>
-
-
+<div class="animated fadeInDown content">
+	<div class="title big">
+	#<div class="bi">HAX FOR U</div>
+	</div>
+	<div class="left">
+		<div id="messages">
+		</div>
+		<div class="send">
+			<form onsubmit="window.setTimeout(handleChat, 1); return false;">
+				<input type="text" id="msg" onsubmit="" placeholder="Message"/>
+			</form>
+		</div>
+		<div id="examples">
+			<code>
+				<pre><% include example.txt %></pre>
+			</code>
+		</div>
+	</div>
+	<div class="downloads">
+		<div class="title">
+			Downloads 
+		</div>
+		<div id="downloads">
+		</div>
+		<% if(auth) { %>
+		<div class="uploadarea">
+			<form action="upload" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" placeholder="Insert File Here"/>
+				<input type="submit" class="button maxw"/>
+			</form>
+		</div>
+		<% } %>
+	</div>
+	<div class="clear"></div>
+</div>
+<div id="fake" style="display: none;">
+<% include fake.ejs %>
+</div>
 <% include foot.ejs %>
