@@ -19,7 +19,7 @@ function createMessage(content, isadmin)
 function createDownload(link, title)
 {
 	var dl = document.createElement("a");
-	dl.setAttribute("class", "animated rotateInUpLeft download button");
+	dl.setAttribute("class", "animated flipInY download button");
 	dl.setAttribute("href", link);
 	dl.textContent = title;
 	return dl;

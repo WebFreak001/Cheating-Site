@@ -6,7 +6,6 @@ app.http().io()
 
 app.engine('ejs', require('ejs').__express); // use ejs
 
-app.use(require('express-minify')()); // shrink css & js files
 app.use(express.compress()); // send as "zip"
 app.use(express.static(__dirname + '/public')); // use public/ as public folder
 app.use(express.cookieParser()); // used for sessions
