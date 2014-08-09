@@ -9,7 +9,8 @@ Made in Node.JS
 * Node.JS
 * NPM
  
-##Included in node_modules
+##NodeJS Packages
+You can install these Packages via: 'npm install <packageName>'
 * Express.io
 * connect-busboy
 * ejs
