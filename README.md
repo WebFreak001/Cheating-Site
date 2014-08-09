@@ -12,3 +12,4 @@ Made in Node.JS
 ##Included in node_modules
 * Express.io
 * connect-busboy
+* ejs
