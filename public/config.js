@@ -1,8 +1,7 @@
+// Show some website on key-Up
 var enableFakeSite = true;
-// Show website like "New Tab" on pressing key
-var fakeSiteKey = 187;
-// Not Numpad +
-var realSiteKey = 67;
-// C
-var fakeAnimations = true;
+
+var CheatCode = '16'; // Shift
+
 // Enabled nice animations when switching between fake and real site
+var fakeAnimations = true;

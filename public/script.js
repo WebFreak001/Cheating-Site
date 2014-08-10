@@ -41,39 +41,48 @@ io.on("file", function (data)
 var isFake = false;
 var hideDura = fakeAnimations ? 1000 : 1;
 
-function showFake()
+function showFakeSite()
 {
 	if(!isFake)
 	{
-		isFake = true;
 		document.getElementById("fake").setAttribute("class", "visible");
-		document.getElementById("fake").style.display = "block";
+        document.getElementById("fake").style.display = "block";
+        isFake = true;
 	}
 }
 
-function hideFake()
+function hideFakeSite()
 {
 	if(isFake)
 	{
-		isFake = false;
 		document.getElementById("fake").setAttribute("class", fakeAnimations ? "transition hidden" : "hidden");
-		window.setTimeout(function() { document.getElementById("fake").style.display = "none"; }, hideDura);
+        window.setTimeout(function () { document.getElementById("fake").style.display = "none"; }, hideDura);
+        isFake = false;
 	}
 }
 
 function handleCheats(e)
 {
+    e = e || window.event;
+    
+    var fakeSiteIsActive;
+
 	if (enableFakeSite)
 	{
-		if (e.keyCode == fakeSiteKey) // + (Not Numpad)
-		{
-			showFake();
-		}
-		else if (e.keyCode == realSiteKey) // C
-		{
-			hideFake();
-		}
+        if (e.keyCode == CheatCode)
+        {
+            if (fakeSiteIsActive)
+            {
+                hideFakeSite();
+                fakeSiteIsActive = false;
+            } 
+            else
+            {
+                showFakeSite();
+                fakeSiteIsActive = true;
+            }
+        }
 	}
 }
 
-window.onkeyup = handleCheats;
+document.onkeyup = handleCheats;
