@@ -60,17 +60,18 @@ function hideFakeSite()
         isFake = false;
 	}
 }
-
+var fakeSiteIsActive;
 function handleCheats(e)
 {
     e = e || window.event;
     
-    var fakeSiteIsActive;
+    
 
 	if (enableFakeSite)
 	{
         if (e.keyCode == CheatCode)
         {
+
             if (fakeSiteIsActive)
             {
                 hideFakeSite();
