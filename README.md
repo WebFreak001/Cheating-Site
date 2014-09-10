@@ -10,7 +10,7 @@ Made in Node.JS
 * NPM
  
 ##NodeJS Packages
-You can install these Packages via: `npm install <packageName>`
+You can install these Packages via: `npm install` or manualy via `npm install <packageName>`
 * Express.io
 * connect-busboy
 * ejs
