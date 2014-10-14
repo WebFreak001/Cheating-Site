@@ -84,6 +84,6 @@ app.io.route('chat', { // Real-Time file & message transfer
 	}
 });
 
-var port = 3535;
+var port = 80;
 app.listen(port);
 console.log("LISTENING TO PORT " + port);
