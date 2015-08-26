@@ -43,22 +43,15 @@ var hideDura = fakeAnimations ? 1000 : 1;
 
 function showFakeSite()
 {
-	if(!isFake)
-	{
 		document.getElementById("fake").setAttribute("class", "visible");
         document.getElementById("fake").style.display = "block";
-        isFake = true;
-	}
+
 }
 
 function hideFakeSite()
 {
-	if(isFake)
-	{
 		document.getElementById("fake").setAttribute("class", fakeAnimations ? "transition hidden" : "hidden");
         window.setTimeout(function () { document.getElementById("fake").style.display = "none"; }, hideDura);
-        isFake = false;
-	}
 }
 var fakeSiteIsActive;
 function handleCheats(e)
